@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Run.</title>
+
+    <!-- ICON LINK  -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+    <!-----CSS LINK----->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <!----Style Switcher------>
+    <link rel="stylesheet" href="/Home Page/Css/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="/Home Page/Css/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/Home Page/Css/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/Home Page/Css/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/Home Page/Css/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="/Home Page/Css/style-switcher.css">
+
+    <!-- For HOME  -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/yma3ljw.css">
+    <link rel="stylesheet" type="text/css" href="/Home Page/css/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="/Home Page/css/css/full.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+        var e,
+            t = document.createElement("style");
+        return (
+            (t.innerHTML = "root: { --tmp-var: bold; }"),
+            document.head.appendChild(t),
+            (e = !!(
+                window.CSS &&
+                window.CSS.supports &&
+                window.CSS.supports("font-weight", "var(--tmp-var)")
+            )),
+            t.parentNode.removeChild(t),
+            e
+        );
+    };
+    supportsCssVars() ||
+        alert(
+            "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+
+</head>
+<body>
+
+    <div class="cursor">
+    </div>
+
+    <!------------------------NAV BAR------------------------->
+
+    <header class="header">
+
+        <nav >
+            <ul class="nav">
+                <li><a href="index.html" class="active" target="_blank"> Home</a></li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="services.html" target="_blank">Services</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!------------------- Home  -------------------->
+
+
+
+
+    <main>
+        <div class="content">
+            <div class="fold-content" id="base-content">
+                <!-- CONTENT INSIDE HERE -->
+                
+
+                <p class="content__type">
+                    An old silent pond <br />
+                    A frog jumps into the pond—<br />
+                    Splash! Silence again.
+                </p>
+                <img class="content__img" src="/Home Page/img/14.jpg" alt="Some image" />
+                <p class="content__type">
+                    A world of dew,<br />
+                    And within every dewdrop<br />
+                    A world of struggle.
+                </p>
+                <img class="content__img" src="/Home Page/img/13.jpg" alt="Some image" />
+                <p class="content__type">
+                    The light of a candle<br />
+                    Is transferred to another candle—<br />
+                    Spring twilight
+                </p>
+                <img class="content__img" src="/Home Page/img/12.jpg" alt="Some image" />
+                <p class="content__type">
+                    I write, erase, rewrite<br />
+                    Erase again, and then<br />
+                    A poppy blooms.
+                </p>
+                <img class="content__img" src="/Home Page/img/11.jpg" alt="Some image" />
+                <p class="content__type">
+                    Over the wintry<br />
+                    Forest, winds howl in rage<br />
+                    With no leaves to blow.
+                </p>
+                <img class="content__img" src="/Home Page/img/10.jpg" alt="Some image" />
+                <p class="content__type">
+                    The summer grasses.<br />
+                    All that remains<br />
+                    Of warriors’ dreams.
+                </p>
+            </div>
+            <div class="screen" id="fold-effect">
+                <div class="wrapper-3d">
+                    <div class="fold fold-before"></div>
+                    <div class="fold fold-center"></div>
+                    <div class="fold fold-after"></div>
+                </div>
+            </div>
+            <button class="btn-debug" id="btn-debug" >See Planes</button>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!------------------- Color Customize -------------------->
+
+    <div class="style-switcher">
+
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+
+    </div>
+
+
+
+
+    <!------JS LINK-------->
+    <script src="main.js"></script>   
+    <script src="/Home Page/js/JavaScript/style-switcher.js"></script>
+
+
+    <!-- FOR HOME  -->
+    <script src="/Home Page/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/Home Page/js/full.js"></script>
+
+</body>
+</html>
